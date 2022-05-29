@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  node:
+    build: .
+    init: true
+    restart: always
+    ports:
+      - "127.0.0.1:3033:3030"
+    environment:
+      - DEEPL_TOKEN=YOUR_TOKEN_IS_HERE
