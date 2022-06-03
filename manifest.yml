@@ -1,0 +1,7 @@
+applications:
+ - name: My-APP
+   random-route: true
+   memory: 128M
+   command: npm start
+   buildpacks:
+    - https://github.com/cloudfoundry/nodejs-buildpack
